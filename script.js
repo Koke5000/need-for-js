@@ -1,7 +1,9 @@
 const url = require('url').format({
   protocol: 'file',
   slashes: true,
-  pathname: require('path').join(__dirname, 'index.html')
+  pathname: require('path').join(__dirname, 'index.html'),
+  base:'/need-for-js/'
+
 });
 
 const {app, BrowserWindow} = require('electron');
